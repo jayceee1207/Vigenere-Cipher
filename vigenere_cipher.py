@@ -77,6 +77,9 @@ key = loop_key(message, keyword)
 cipher_text = cipher_txt(message, key)
 
 #Make an empty variable for num_message and num_key
+num_message = ""
+num_key = ""
+
 #Use for loop to get the number of base of each character of message in the dictionary
 #Use for loop to get the number of base of each character of keyword in the dictionary
 #Print the Message
