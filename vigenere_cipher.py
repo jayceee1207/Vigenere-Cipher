@@ -27,6 +27,7 @@ while moredata == "yes":
 #Enumerate all the ASCII value and will be inserted inside the empty dictionary
 for i, char in enumerate(string.ascii_uppercase):
     dict[i] = char
+
 #Make a function named loop_key to get the list of key
 def loop_key(message, key):
         key = list(key)
@@ -36,7 +37,16 @@ def loop_key(message, key):
             for i in range(len(message) - len(key)):
                 key.append(key[i % len(key)])
         return "".join(key)
+
 #Make a function named cipher_txt to get the list of cipher text
+def cipher_txt(message, key):
+        cipher_text = []
+        for i in range(len(message)):
+            x = (ord(message[i]) + ord(key[i])) % 26
+            x += ord('A')
+            cipher_text.append(chr(x))
+        return " ".join(cipher_text)
+
 #Make a function named add_bot to get the sum of the values of each character
 #Make a function named mod_bot to decrypt the message inputted by the user
 #Ask the user for their input
