@@ -93,7 +93,11 @@ for char in key:
                 num_key += str(num)
                 num_key += " "
 #Print the Message
+print("\u001b[33;1m","Message: ", message, num_message)
+
 #Print the Keyword
+print("\u001b[33;1m","Key: ", keyword, num_key)
+
 #Print the Sum
 #Print the Mod 
 #Print the Cipthertext
