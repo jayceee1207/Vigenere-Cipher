@@ -23,7 +23,9 @@ while moredata == "yes":
     result = pyfiglet.figlet_format("VIGENERE CIPHER", font = "bubble" )
     print(result)
 #Enumerate all the ASCII value and will be inserted inside the empty dictionary
+dict = {}
 #Make a function named loop_key to get the list of key
+
 #Make a function named cipher_txt to get the list of cipher text
 #Make a function named add_bot to get the sum of the values of each character
 #Make a function named mod_bot to decrypt the message inputted by the user
@@ -45,5 +47,6 @@ while moredata == "yes":
     moredata = str(input("Do you want to try again? (yes or no): "))
 
 #   End the program with an exit message
+
 print("\nThank you for using my program!")
 print(emoji.emojize(":grinning_face_with_big_eyes:"))
