@@ -47,7 +47,7 @@ def cipher_txt(message, key):
             cipher_text.append(chr(x))
         return " ".join(cipher_text)
 
-#Make a function named add_bot to get the sum of the values of each character
+#Make a function named add_bot to get the sum of the values of each paired characters
 def add_bot(message, key):
         add = []
         for i in range(len(message)):
@@ -57,6 +57,14 @@ def add_bot(message, key):
         return
     
 #Make a function named mod_bot to decrypt the message inputted by the user
+def mod_bot(message, key):
+        mod = []
+        for i in range(len(message)):
+            x = ((ord(message[i]) - 65) + (ord(key[i]) - 65)) % 26
+            mod.append(x)
+        print("Mod: ", mod)
+        return
+
 #Ask the user for their input
 #Ask the user for their keyword
 #Print the key
