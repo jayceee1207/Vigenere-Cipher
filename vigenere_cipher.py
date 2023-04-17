@@ -28,7 +28,14 @@ while moredata == "yes":
 for i, char in enumerate(string.ascii_uppercase):
     dict[i] = char
 #Make a function named loop_key to get the list of key
-
+def loop_key(message, key):
+        key = list(key)
+        if len(message) == len(key):
+            return key
+        else:
+            for i in range(len(message) - len(key)):
+                key.append(key[i % len(key)])
+        return "".join(key)
 #Make a function named cipher_txt to get the list of cipher text
 #Make a function named add_bot to get the sum of the values of each character
 #Make a function named mod_bot to decrypt the message inputted by the user
