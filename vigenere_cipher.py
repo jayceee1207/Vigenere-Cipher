@@ -87,6 +87,11 @@ for char in message:
                 num_message += str(num)
                 num_message += " "
 #Use for loop to get the number of base of each character of keyword in the dictionary
+for char in key:
+        for num, letter in dict.items():
+            if char == letter:
+                num_key += str(num)
+                num_key += " "
 #Print the Message
 #Print the Keyword
 #Print the Sum
