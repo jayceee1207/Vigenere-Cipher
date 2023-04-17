@@ -4,11 +4,13 @@
 
 import pyfiglet
 import emoji 
+import string 
+
 author_name = ("PROGRAMMED BY: JOHN CARLO ABLAY")
 name = author_name.center(100)
 print(name)
 
-
+dict = {}
 #PSEUDOCODE
 #Make a dictionary of every letter with it corresponding base value.
 #this variable won't be used in the program, this will just be my guide for the letter and its corresponding base value.
@@ -23,7 +25,8 @@ while moredata == "yes":
     result = pyfiglet.figlet_format("VIGENERE CIPHER", font = "bubble" )
     print(result)
 #Enumerate all the ASCII value and will be inserted inside the empty dictionary
-dict = {}
+for i, char in enumerate(string.ascii_uppercase):
+    dict[i] = char
 #Make a function named loop_key to get the list of key
 
 #Make a function named cipher_txt to get the list of cipher text
