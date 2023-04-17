@@ -5,10 +5,14 @@
 import pyfiglet
 import emoji 
 import string 
+import os
 
 author_name = ("PROGRAMMED BY: JOHN CARLO ABLAY")
 name = author_name.center(100)
 print(name)
+
+username  = input("Please enter your name: ")
+print("Hello, ", username,"! Welcome to Vigenere Cipher Decryptor!")
 
 dict = {}
 #PSEUDOCODE
@@ -116,5 +120,5 @@ while moredata == "yes":
 
 #   End the program with an exit message
 
-print("\nThank you for using my program!")
+print("\nThank you for using my program!", username)
 print(emoji.emojize(":grinning_face_with_big_eyes:"))
