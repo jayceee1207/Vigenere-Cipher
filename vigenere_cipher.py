@@ -3,6 +3,7 @@
 #Program 3: Vigenere Cipher
 
 import pyfiglet
+import emoji 
 author_name = ("PROGRAMMED BY: JOHN CARLO ABLAY")
 name = author_name.center(100)
 print(name)
@@ -41,4 +42,8 @@ while moredata == "yes":
 #Ask the user if they want to use the program again
 #   if true
 #       Run the program again
+    moredata = str(input("Do you want to try again? (yes or no): "))
+
 #   End the program with an exit message
+print("\nThank you for using my program!")
+print(emoji.emojize(":grinning_face_with_big_eyes:"))
