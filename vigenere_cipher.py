@@ -98,8 +98,14 @@ print("\u001b[33;1m","Message: ", message, num_message)
 #Print the Keyword
 print("\u001b[33;1m","Key: ", keyword, num_key)
 
+sum = add_bot(message, key)
+mod = mod_bot(message, key)
+
 #Print the Sum
+print("\u001b[32;1m","Add: ", sum) 
+    
 #Print the Mod 
+print("\u001b[32;1m","Mod: ", mod)
 #Print the Cipthertext
 #Ask the user if they want to use the program again
 #   if true
