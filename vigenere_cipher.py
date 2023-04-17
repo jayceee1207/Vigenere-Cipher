@@ -107,6 +107,8 @@ print("\u001b[32;1m","Add: ", sum)
 #Print the Mod 
 print("\u001b[32;1m","Mod: ", mod)
 #Print the Cipthertext
+print("\u001b[37;1m","Ciphertext", cipher_text)
+
 #Ask the user if they want to use the program again
 #   if true
 #       Run the program again
