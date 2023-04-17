@@ -2,6 +2,7 @@
 #BSCPE 1-5
 #Program 3: Vigenere Cipher
 
+import pyfiglet
 author_name = ("PROGRAMMED BY: JOHN CARLO ABLAY")
 name = author_name.center(100)
 print(name)
@@ -14,7 +15,12 @@ dict_made = {'A' : 0, 'B' : 1, 'C' : 2, 'D' : 3, 'E' : 4, 'F' : 5, 'G' : 6, 'H' 
             'L' : 11, 'M' : 12, 'N' : 13, 'O' : 14, 'P' : 15, 'Q' : 16, 'R' : 17, 'S' : 18, 'T' : 19, 'U' : 20, 'V' : 21,  'W' : 22,
             'X' : 23, 'Y' : 24, 'Z' : 25}
 #Make a variable with True value to ask the user if they want to try the program again 
-#Title of Program using pyfiglet
+moredata = "yes"
+while moredata == "yes":
+
+#Title of Program using pyfiglet 
+    result = pyfiglet.figlet_format("VIGENERE CIPHER", font = "bubble" )
+    print(result)
 #Enumerate all the ASCII value and will be inserted inside the empty dictionary
 #Make a function named loop_key to get the list of key
 #Make a function named cipher_txt to get the list of cipher text
