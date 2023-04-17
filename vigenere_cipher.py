@@ -56,7 +56,7 @@ def add_bot(message, key):
         print("Add: ", add)
         return
     
-#Make a function named mod_bot to decrypt the message inputted by the user
+#Make a function named mod_bot to encrypt the message inputted by the user
 def mod_bot(message, key):
         mod = []
         for i in range(len(message)):
@@ -66,6 +66,8 @@ def mod_bot(message, key):
         return
 
 #Ask the user for their input
+message = str(input("Message: "))
+
 #Ask the user for their keyword
 #Print the key
 #Print the Ciphertext
