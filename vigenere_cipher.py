@@ -69,6 +69,8 @@ def mod_bot(message, key):
 message = str(input("Message: "))
 
 #Ask the user for their keyword
+keyword = str(input("Key: "))
+
 #Print the key
 #Print the Ciphertext
 #Make an empty variable for num_message and num_key
